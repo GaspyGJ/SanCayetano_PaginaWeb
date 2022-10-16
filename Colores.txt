@@ -1,0 +1,5 @@
+AZUL -->  #31AADF
+
+GRIS --> #7B7F7E
+
+BLANCO --> #FBFFFF

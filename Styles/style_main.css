@@ -1,0 +1,316 @@
+/* ---- particles.js container ---- */
+#particles-js {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(#91cff0, #ced8e2);
+    color: black;
+}
+
+/*********** HEADER *****************/
+header {
+    height: 15vh;
+}
+
+.ul-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*Centra verticalmente el menu*/
+    justify-content: space-around;
+}
+
+header .ul-menu h1 {
+    color: #31AADF
+}
+
+main h1,
+main h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.ul-menu {
+    display: none;
+}
+
+.ul-menu li {
+    list-style: none;
+}
+
+.ul-menu li a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+.ul-menu li a:hover {
+    border-bottom: 4px solid black;
+    transition: border-bottom 0.15s;
+}
+
+.icono-menu {
+    display: none;
+    /*para que no se muestre*/
+}
+
+#menu-sandwich {
+    background-color: transparent;
+    border: none;
+
+}
+
+.dropdown-menu {
+    margin: 0;
+    width: 98.7vw;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*********** MAIN *****************/
+
+#vertical-section-0 {
+    height: 85vh;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#vertical-section-0 #titulo {
+    text-align: center;
+    position: relative;
+    top: -1.5em;
+    z-index: -10;
+}
+.img-oso{
+    z-index: -10;
+}
+
+
+
+#vertical-section-0 .container-img-oso {
+    display: flex;
+    justify-content: space-around;
+}
+
+#vertical-section-1 {
+    display: flex;
+}
+
+#vertical-section-1 #section-izq {
+    width: 40%;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 0;
+}
+
+#vertical-section-1 #section-izq .section-titulo {
+    text-align: center;
+}
+
+#vertical-section-1 #section-izq #quienes-somos {
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.p-detalles {
+    text-align: center;
+    color: rgb(94, 94, 94);
+    font-size: 0.5em;
+}
+
+#vertical-section-1 #section-izq #ubicacion {
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+#vertical-section-1 #section-izq #ubicacion #maps {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#vertical-section-1 #section-izq h1 {
+    font-size: 4em;
+}
+
+#vertical-section-1 #section-izq h2 {
+    font-size: 3em;
+}
+
+#vertical-section-1 #section-izq h3 {
+    font-size: 2em;
+}
+
+#vertical-section-1 #section-izq p {
+    margin: 0.5em;
+    font-size: 1.2em;
+}
+
+#vertical-section-1 #section-der {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+
+    margin-top: 0;
+}
+
+#vertical-section-1 #section-der .container-img-oso {
+    display: none;
+}
+
+#vertical-section-1 #section-der #botonera{
+    text-align: center;
+}
+
+#vertical-section-1 #section-der #botonera a {
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    border-radius: 10px;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, .15);
+    border: 3px solid #2DAAE1;
+}
+
+#vertical-section-1 #section-der #botonera a:hover {
+    background-color: rgba(255, 255, 255, 0.664);
+}
+
+#vertical-section-1 #section-der #botonera a:active {
+    background-color: #2DAAE1;
+}
+
+#vertical-section-1 #section-der .container-img-carrusel {
+    text-align: center;
+}
+
+#vertical-section-1 #section-der .image-title {
+    text-align: center;
+}
+
+#vertical-section-1 #section-der p {
+    text-align: center;
+}
+
+#carrusel {
+    width: 100%;
+}
+
+/****** FOOTER ******/
+
+#telefono-horario-container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+
+#drop-menu-horarios {
+    width: min-content;
+    margin: 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+/*MEDIA QUERIS*/
+@media only screen and (max-width: 1100px) {
+    #vertical-section-0 .container-img-oso {
+        display: none;
+    }
+
+    #vertical-section-1 #section-der .container-img-oso {
+        display: block;
+        text-align: center;
+    }
+
+    #vertical-section-1 #section-der .container-img-oso #img-oso {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #vertical-section-0 #titulo {
+        text-align: center;
+        position: relative;
+        top: -3.5em;
+        z-index: -10;
+    }
+
+    #titulo {
+        top: -5em;
+    }
+
+    #vertical-section-0 #titulo img {
+        width: 100%;
+    }
+
+    #vertical-section-0 #titulos h1 {
+        font-size: 4em;
+    }
+
+    #vertical-section-0 #titulos h2 {
+        font-size: 2em;
+    }
+
+    #vertical-section-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 5%;
+        gap:5em;
+        padding: 0;
+    }
+
+    #vertical-section-1 #section-der {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2.5em;
+        gap:5em;
+
+    }
+
+    #vertical-section-1 #section-der .container-img-oso {
+        display: none;
+    }
+
+    #vertical-section-1 #section-izq {
+        width: 100%;
+        margin: 0;
+        gap:5em;
+    }
+
+    #vertical-section-1 #section-der #botonera{
+        margin-top: 3em;
+        margin-bottom: 2em;
+        font-size: 0.8em;
+    }
+    #vertical-section-1 #section-der #botonera a{
+        width: 1000px !important;
+    }
+   
+}
+
+@media only screen and (max-width: 426px) {
+    #telefono-horario-container #horarios {
+        position: relative;
+        top: -4em;
+    }
+}

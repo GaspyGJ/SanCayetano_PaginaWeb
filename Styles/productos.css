@@ -1,0 +1,164 @@
+/* ---- particles.js container ---- */
+#particles-js {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(#91cff0, #ced8e2);
+    color: black;
+}
+
+/*********** HEADER *****************/
+header {
+    height: 15vh;
+}
+
+.ul-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*Centra verticalmente el menu*/
+    justify-content: space-around;
+}
+
+header .ul-menu h1{
+    color:#31AADF
+}
+
+main h1, main h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.ul-menu{
+    display: none;
+}
+
+.ul-menu li {
+    list-style: none;
+}
+
+.ul-menu li a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+.ul-menu li a:hover {
+    border-bottom: 4px solid black;
+    transition: border-bottom 0.15s;
+}
+
+.icono-menu {
+    display: none;
+    /*para que no se muestre*/
+}
+
+#menu-sandwich{
+    background-color: transparent;
+    border:none;    
+    
+}
+
+.dropdown-menu{
+    margin:0;
+    width: 98.7vw;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
+/*********** MAIN *****************/
+
+#titulo{
+    text-align: center;
+    font-size: 5.5em;
+    position: relative;
+    top:-0.5em;
+    color:#3AA5DD;
+    text-shadow: 2px 2px 1px #1060A2;
+}
+
+#grid-container{
+    text-align: center;
+    margin-bottom: 5em;
+    gap:2em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center !important;
+}
+
+.grid-item:focus{
+    background-color: rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(5px);
+}
+.grid-item:hover{
+    background-color: rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(5px);
+}
+
+/****** FOOTER ******/
+
+#telefono-horario-container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+
+#drop-menu-horarios {
+    width: min-content;
+    margin: 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+/*MEDIA QUERIS*/
+@media only screen and (max-width: 1100px) {
+    .dropdown-menu{
+        width: 99vw;
+    }
+    
+    .grid-item img{
+        width: 10em;
+        height: 10em;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+     .grid-item h5{
+        font-size: 1em;
+     }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .dropdown-menu{
+        width: 97vw;
+    }
+
+    #titulo{
+        font-size: 4.5em;
+    }
+    
+    #grid-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    #telefono-horario-container #horarios {
+        position: relative;
+        top: -4em;
+    }
+}
