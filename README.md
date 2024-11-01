@@ -1,21 +1,18 @@
 # Página  para empresa de hielo y agua "San Cayetano" 🧊​​
 
-
-Página web de presentación de la empresa, incorporando también una seccion de productos. 
-
 Puedes visitar la página aqui ➡️ https://san-cayetano-web.web.app/
   
-## 🔎 Sobre el Sistema.
+## 🔎 Sobre el sitio.
 
 * 💻 Realizado en &nbsp;`HTML` , &nbsp;`CSS` , &nbsp;`JavaScript`
 
-* 🔧 Adaptado para distinto tipos de pantallas
+* 🔧 Con diseño responsive 
 
 * 🌐 Desplegado en&nbsp;`Firebase` hosting
 
 
-## 💎 Cosas que veo para mejorar
+## 💎 Cosas a mejorar
 
 1. Implementación de base de datos para conexión automática de precios con Sistema de Gestión.
 
-2. Pendiente de la entrega de imagenes por parte de la empresa para incorporarlas a la sección de productos
+2. Agregado de imagenes en la sección de productos
